@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudPath</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("images/background.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 300px; /* Adjust image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="password"],
+        .form input[type="tel"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #000; /* Dark black text color */
+        }
+
+        .form input[type="text"]::placeholder,
+        .form input[type="email"]::placeholder,
+        .form input[type="password"]::placeholder,
+        .form input[type="tel"]::placeholder {
+            color: #000; /* Dark black placeholder color */
+        }
+
+        .form input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        .trouble {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .trouble a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .trouble a:hover {
+            color: #23527c;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer span {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .footer a:hover {
+            color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <form class="form" action="http://127.0.0.1:80/signup" method="post">
+            <input type="text" name="student_name" placeholder="Student Name" required>
+            <input type="text" name="College_name" placeholder="School Name" required>
+            <input type="text" name="student_id" placeholder="Student ID" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone_number" placeholder="Phone Number" required>         
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign up">
+        </form>
+        <div class="trouble">
+            <a href="#">Already have an account? Log in</a>
+        </div>
+        <div class="footer">
+            <span>By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+        </div>
+    </div>
+</body>
+</html>

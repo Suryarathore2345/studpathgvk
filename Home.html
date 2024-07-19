@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Platform Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Light shade from the logo */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        header {
+            background-color: #88c0d0; /* Light blue from the logo */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            grid-column: span 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header img {
+            width: 400px; /* Increased width */
+            height: 180px; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space between logo and content */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-family: 'Helvetica', sans-serif; /* Changed font */
+        }
+        header h2 {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Georgia', serif; /* Changed font */
+        }
+        nav {
+            background-color: #4b6d88; /* Darker shade from the logo */
+            padding: 10px 0;
+            text-align: center;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            grid-column: span 3;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #88c0d0; /* Light blue from the logo */
+        }
+        .hero {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            position: relative;
+            grid-column: span 3;
+        }
+        .hero-overlay {
+            background-color: rgba(136, 192, 208, 0.7); /* Semi-transparent overlay matching the logo */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            border-radius: 8px;
+        }
+        .hero-content {
+            padding: 20px;
+            max-width: 800px;
+        }
+        .hero-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+        .feature:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #88c0d0; /* Light blue from the logo */
+        }
+        .feature-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .feature-description {
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #4b6d88; /* Darker shade from the logo */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+            margin-top: 20px;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:/Users/Surya/OneDrive/Pictures/SS1/WhatsApp%20Image%202024-07-17%20at%2019.46.03_a6e41882.jpg" alt="Logo">
+        <h1>StudPath</h1>
+        <h2>Unleash Potential, Learn, Achieve</h2>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="feature">
+            <i class="feature-icon fas fa-info-circle"></i>
+            <h2 class="feature-title">About Us</h2>
+            <p class="feature-description">Learn about our mission, vision, and commitment to delivering quality education.</p>
+            <a href="#about" class="card-link">Read More</a>
+        </section>
+        <section id="courses" class="feature">
+            <i class="feature-icon fas fa-book"></i>
+            <h2 class="feature-title">Courses</h2>
+            <p class="feature-description">Discover a wide range of courses covering various subjects and levels.</p>
+            <a href="#courses" class="card-link">Explore Courses</a>
+        </section>
+        <section id="teachers" class="feature">
+            <i class="feature-icon fas fa-chalkboard-teacher"></i>
+            <h2 class="feature-title">Teachers</h2>
+            <p class="feature-description">Meet our experienced teachers and educators dedicated to your success.</p>
+            <a href="#teachers" class="card-link">Meet Teachers</a>
+        </section>
+        <section id="journey" class="feature">
+            <i class="feature-icon fas fa-route"></i>
+            <h2 class="feature-title">Journey</h2>
+            <p class="feature-description">Follow the educational journey of our students and see their success stories.</p>
+            <a href="#journey" class="card-link">Explore Journey</a>
+        </section>
+        <section id="analysis" class="feature">
+            <i class="feature-icon fas fa-chart-line"></i>
+            <h2 class="feature-title">Analysis</h2>
+            <p class="feature-description">Get insights and analysis on student performance, trends, and educational data.</p>
+            <a href="#analysis" class="card-link">View Analysis</a>
+        </section>
+        <section id="testimonials" class="feature">
+            <i class="feature-icon fas fa-star"></i>
+            <h2 class="feature-title">Testimonials</h2>
+            <p class="feature-description">Read what our students and parents say about their experiences with us.</p>
+            <a href="#testimonials" class="card-link">Read Testimonials</a>
+        </section>
+        <section id="pricing" class="feature">
+            <i class="feature-icon fas fa-dollar-sign"></i>
+            <h2 class="feature-title">Pricing</h2>
+            <p class="feature-description">Check our affordable pricing plans and choose the best option for you.</p>
+            <a href="#pricing" class="card-link">View Pricing</a>
+        </section>
+        <section id="contact" class="feature">
+            <i class="feature-icon fas fa-envelope"></i>
+            <h2 class="feature-title">Contact Us</h2>
+            <p class="feature-description">Get in touch with us for any queries, feedback, or support.</p>
+            <a href="#contact" class="card-link">Contact Us</a>
+        </section>
+        <section id="footer" class="footer">
+            <p>&copy; 2024 Educational Platform. All rights reserved.</p>
+        </section>
+    </div>
+</body>
+</html>
